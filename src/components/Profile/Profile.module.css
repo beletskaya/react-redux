@@ -1,0 +1,16 @@
+.profileWrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.info{
+    flex: 0 0 23%;
+    max-width: 23%;
+}
+.mainProfile{
+    flex: 0 0 51%;
+    max-width: 51%;
+}
+.anotherInfo{
+    flex: 0 0 23%;
+    max-width: 23%;
+}

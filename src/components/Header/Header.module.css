@@ -1,0 +1,26 @@
+.header{
+    grid-area: header;
+    background-color: #3f4257;
+    margin-bottom: 50px;
+}
+.header img{
+    width: 85px;
+}
+.header p{
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    margin: 0;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+.wrapperLogin a, .wrapperLogin {
+    color: #efebeb;
+    font-weight: 600;
+}

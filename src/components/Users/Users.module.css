@@ -1,0 +1,64 @@
+.main{
+    padding: 50px 0;
+}
+.firstBlock{
+    display: flex;
+    flex-direction: column;
+}
+.firstBlock img{
+    height: 120px;
+    width: 120px;
+    border-radius: 210px;
+    object-fit: cover;
+}
+.wrapper{
+    display: flex;
+    max-width: 1150px;
+    margin: 0 auto 30px;
+}
+.button{
+    margin-top: 20px;
+    background-color: #9554bc;
+    text-align: center;
+    padding: 12px 20px;
+    color: beige;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s linear;
+}
+.button:hover{
+    background-color: #5e1f88;
+
+}
+.secondBlock{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 80%;
+    border: 2px solid #a39f9f;
+    border-radius: 20px;
+    margin-left: 30px;
+}
+.nameWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.name{
+    font-size: 20px;
+    font-weight: bold;
+}
+.status{
+    font-size: 16px;
+    color: #515365;
+}
+.locationWrapper{
+    font-size: 17px;
+    font-weight: bold;
+    color: #494949;
+    line-height: 24px;
+}
+.activePage{
+    font-weight: bold;
+}

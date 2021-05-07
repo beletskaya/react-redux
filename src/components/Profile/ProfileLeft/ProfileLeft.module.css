@@ -1,0 +1,25 @@
+.wrapperInfo{
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #e6ecf5;
+}
+.titleInfo{
+    padding: 23px 25px 18px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #515365;
+    font-size: .875rem;
+    border-bottom: 1px solid #e6ecf5;
+}
+.contentInfo{
+    padding: 24px 23px 23px;
+}
+.mainText, .textInfo{
+    color: #515365;
+    font-weight: 500;
+    font-size: .812rem;
+    line-height: 1.5;
+}
+p.textInfo{
+    color: #888da8;
+}

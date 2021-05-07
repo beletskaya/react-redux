@@ -1,0 +1,42 @@
+.descriptionBlock{
+    padding: 10px;
+}
+.image img{
+    width: 110px;
+    object-fit: contain;
+}
+.name{
+    position: relative;
+    display: inline-block;
+    margin: 15px 0;
+    font-size: 23px;
+    font-weight: 700;
+}
+.about{
+    margin-bottom: 10px;
+    color: #626262;
+}
+.job{
+    background-color: #0ad528;
+    right: -10px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+}
+.iconNone{
+    display: none;
+}
+.iconBlock{
+    display: inline-block;
+    margin-right: 20px;
+}
+.contacts{
+    margin-top: 35px;
+    text-align: center;
+}
+.contacts img{
+    width: 25px;
+}

@@ -1,0 +1,39 @@
+.dialogs{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    padding: 10px;
+}
+.dialogsItems{
+    color: darkslategray;
+}
+.messages{
+
+}
+.message{
+    padding: 10px;
+}
+.dialog{
+    padding: 10px;
+}
+.dialogsItems .active{
+    color: darkviolet;
+}
+.add, .remove{
+    padding: .8rem 2.1rem;
+    font-size: 0.9rem;
+    border-radius: 0.3rem;
+    border: 1px solid #e6ecf5;
+}
+.add{
+    background-color: #ff5e3a;
+    border-color: #ff5e3a;
+    color: #fff;
+    margin-right: 20px;
+}
+.remove{
+    color: #888da8;
+    border-color: #d8dbe6;
+}
+.wrapperArea textarea{
+    max-width: 380px;
+}

@@ -1,0 +1,22 @@
+.nav{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px 20px ;
+    margin-top: -5px;
+    display: flex;
+    justify-content: space-between;
+}
+.item a{
+    font-size: 14px;
+    font-weight: 700;
+    color: #9a9fbf;
+    text-decoration: none;
+}
+.item a.active{
+    color: #515365;
+}
+.appGroup{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
