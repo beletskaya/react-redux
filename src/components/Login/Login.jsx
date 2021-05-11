@@ -6,6 +6,7 @@ import {required} from "../../helpers/validators/validators";
 import { Redirect } from 'react-router'
 
 const LoginForm = (props) => {
+    console.log(props.error)
     return <div className={classes.wrapper}>
         <form onSubmit={props.handleSubmit}>
             <div>
@@ -19,6 +20,10 @@ const LoginForm = (props) => {
             <div>
                 <button type={'submit'}>Login</button>
             </div>
+            {props.error && <div className={classes.formError}>
+                {props.error}
+            </div>}
+
         </form>
     </div>
 }

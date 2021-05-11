@@ -1,4 +1,5 @@
 import {auth, login, logout} from "../api/api";
+import {stopSubmit} from "redux-form";
 
 const AUTH_DATA = 'AUTH_DATA';
 const LOGIN_DATA = 'LOGIN_DATA';
@@ -37,6 +38,7 @@ export const setAuthData = (userId, email, login, isAuth) => ({type: AUTH_DATA, 
 export const setLoginData = (email, password, rememberMe) => ({type: AUTH_DATA, dataForm:{email, password, rememberMe} });
 
 export const authThunkCreator = () => {
+
     return (dispatch) => {
         auth().then( result => {
             if(result.resultCode === 0) { //if users is login
@@ -47,11 +49,14 @@ export const authThunkCreator = () => {
     }
 }
 export const loginThunkCreator = (email, password, rememberMe) => {
-    //debugger
+
     return (dispatch) => {
         login(email, password, rememberMe).then( result => {
             if(result.resultCode === 0) {
                 dispatch(authThunkCreator());
+            }else{
+                let errorMessage = result.data.messages.length > 0 ? result.data.messages[0] : "Something went wrong"
+                dispatch(stopSubmit('login', {_error: errorMessage}))
             }
         })
     }

@@ -42,3 +42,6 @@
     color: #666464;
     margin-bottom: 20px;
 }
+.formError{
+    color: red;
+}
